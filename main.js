@@ -1,11 +1,4 @@
-import axios from "axios";
-
-const getCountry = (countryCode) =>
-  axios
-    .get(`https://restcountries.com/v2/alpha/${countryCode}`)
-    .then((response) => response.data);
-
-const getBorders = (country) => country.borders || [];
+import { getBorders, getCountry } from "./countries.js";
 
 const countryPromise = getCountry("PRT");
 
