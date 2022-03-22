@@ -9,6 +9,9 @@ const getBorders = (country) => country.borders || [];
 
 const countryPromise = getCountry("PRT");
 
-// ...
-
-console.log("debug:", countryPromise);
+countryPromise
+  .then((country) => {
+    const borders = getBorders(country);
+    console.log(borders);
+  })
+  .catch((err) => console.error("An error has occurred"));
