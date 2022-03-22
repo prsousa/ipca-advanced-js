@@ -1,5 +1,5 @@
-import { getBorders, getCountry } from "./countries.js";
+import { getCountry, languagesArround } from "./countries.js";
 
-const country = await getCountry("PRT");
-const borders = getBorders(country);
-console.log(borders);
+const country = await getCountry("FRA");
+const languages = await languagesArround(country);
+console.log(languages);
