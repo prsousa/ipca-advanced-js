@@ -1,0 +1,16 @@
+{
+  "name": "ipca-advanced-js",
+  "version": "1.0.0",
+  "description": "Countries and Borders",
+  "type": "module",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node main.js"
+  },
+  "author": "Paulo Sousa <pcsousa@ipca.pt>",
+  "license": "ISC",
+  "dependencies": {
+    "axios": "^0.26.1"
+  }
+}
